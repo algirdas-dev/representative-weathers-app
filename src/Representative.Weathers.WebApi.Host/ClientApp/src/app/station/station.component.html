@@ -1,0 +1,19 @@
+<form [formGroup]="stationFilterForm" ngClass="station-filter" (ngSubmit)="getObservations(stationCode.value)">
+    <label>Select meteo station:</label>
+    <select formControlName="code" #stationCode>
+        <option *ngFor="let station of stations" [value]="station.code">
+            {{station.name}}
+        <option>
+      </select>
+      <button>Show</button>
+</form>
+<div ngClass="average-temperatures">
+    <label>Averange 7 days temperature:</label>
+    <div *ngFor="let observation of observationAverages">
+        <label>{{observation.observationDate}}:</label>
+        <div>
+            <label>{{observation.airTemperature}}</label>
+        </div>
+    </div>
+</div>
+

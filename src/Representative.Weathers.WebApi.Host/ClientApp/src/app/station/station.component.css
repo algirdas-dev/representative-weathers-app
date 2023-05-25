@@ -1,0 +1,41 @@
+.station-filter label{
+    padding-right: 10px;
+    width: 177px;
+}
+
+.station-filter select{
+    width: 180px;
+}
+
+.station-filter button{
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: #32CD32;
+    border: none;
+    width: 82px;
+}
+
+.station-filter button:hover{
+    background-color: #00FF00;
+}
+
+.station-filter button:active{
+    background-color: #32CD32;
+}
+
+.average-temperatures{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.average-temperatures > label{
+    flex: 1 0 100%;
+    padding-bottom: 30px;
+}
+
+.average-temperatures > div{
+        padding-bottom: 30px;
+        min-width: 199px;
+        margin: 0 10px 0 10px;
+}
